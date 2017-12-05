@@ -491,7 +491,7 @@ void Ntuplizer_noTagAndProbe::analyze(const edm::Event& iEvent, const edm::Event
   //! TagAndProbe on HLT taus
   const edm::TriggerNames &names = iEvent.triggerNames(*triggerBits);
   const pat::TauRef tau = (*tauHandle)[0] ;
-
+  
   this -> _tauTriggerBitSet.reset();
 
 
